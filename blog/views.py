@@ -26,6 +26,7 @@ class PostsView(ListView):
 class SinglePostView(View):
     def stored_posts(self, request, post_id):
         stored_posts = request.session.get("stored_posts")
+        saved_for_later = False
         if stored_posts is None:
           stored_posts = []
         else:
