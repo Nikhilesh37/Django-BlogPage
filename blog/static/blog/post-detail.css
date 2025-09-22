@@ -202,3 +202,91 @@ main {
 #comments h2 {
   color: #464646;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #summary {
+    margin: 6rem auto 3rem auto;
+    padding: 1.5rem;
+    height: auto;
+    min-height: 20rem;
+  }
+
+  #summary h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #summary article {
+    position: static;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  #summary article img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  main {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  #comment-form {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  #comments {
+    width: 95%;
+    padding: 1rem 1.5rem;
+  }
+
+  #alert {
+    width: 95%;
+    margin: 6rem auto 3rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #summary {
+    margin: 4rem auto 2rem auto;
+    padding: 1rem;
+  }
+
+  #summary h2 {
+    font-size: 2rem;
+  }
+
+  #summary article img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  main {
+    width: 98%;
+    padding: 1rem;
+  }
+
+  #comment-form {
+    width: 98%;
+    padding: 1rem;
+  }
+
+  #comments {
+    width: 98%;
+    padding: 1rem;
+  }
+
+  #alert {
+    width: 98%;
+    margin: 4rem auto 2rem auto;
+  }
+
+  .form-control input,
+  .form-control textarea {
+    padding: 0.5rem;
+  }
+}

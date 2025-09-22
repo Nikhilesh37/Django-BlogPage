@@ -54,3 +54,66 @@ ul {
   border-radius: 12px;
   background-color: white;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #all-posts {
+    margin: 2rem auto;
+    width: 95%;
+  }
+
+  #all-posts h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+
+  ul {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+
+  .post a {
+    height: 22rem;
+  }
+
+  .post img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card-content {
+    padding: 0.8rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #all-posts {
+    margin: 1rem auto;
+    width: 98%;
+  }
+
+  #all-posts h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .post a {
+    height: auto;
+    min-height: 18rem;
+  }
+
+  .post img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+}

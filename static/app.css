@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  line-height: 1.6;
 }
 
 h1,
@@ -46,4 +47,50 @@ h3 {
 #main-navigation h1 a:hover,
 #main-navigation h1 a:active {
   color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #main-navigation {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 5%;
+    position: relative;
+  }
+
+  #main-navigation h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #main-navigation nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #main-navigation nav a {
+    margin: 0;
+    text-align: center;
+    padding: 0.5rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-navigation {
+    padding: 1rem 3%;
+  }
+  
+  #main-navigation h1 {
+    font-size: 1.3rem;
+  }
+  
+  #main-navigation nav a {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
 }
