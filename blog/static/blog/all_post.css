@@ -58,7 +58,7 @@ ul {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   #all-posts {
-    margin: 2rem auto;
+    margin: 5rem auto;
     width: 95%;
   }
 
@@ -89,7 +89,7 @@ ul {
 
 @media (max-width: 480px) {
   #all-posts {
-    margin: 1rem auto;
+    margin: 3rem auto;
     width: 98%;
   }
 
@@ -100,12 +100,13 @@ ul {
 
   ul {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .post a {
     height: auto;
     min-height: 18rem;
+    padding: 1rem;
   }
 
   .post img {
@@ -114,6 +115,7 @@ ul {
   }
 
   .card-content {
-    padding: 1rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
   }
 }

@@ -90,3 +90,71 @@
 .post:active time {
   color: white;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .post {
+    margin: 1rem;
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .post a:hover,
+  .post a:active {
+    transform: none;
+  }
+
+  .post img {
+    height: 150px;
+  }
+
+  .post__content {
+    padding: 1rem;
+  }
+
+  .post__content p {
+    font-size: 0.9rem;
+  }
+
+  .post h3 {
+    font-size: 1.1rem;
+  }
+
+  .post-tags span {
+    font-size: 0.8rem;
+    padding: 0.1rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .post {
+    margin: 0.5rem;
+    min-width: 180px;
+    max-width: 280px;
+  }
+
+  .post img {
+    height: 120px;
+  }
+
+  .post__content {
+    padding: 0.8rem;
+  }
+
+  .post__content p {
+    font-size: 0.8rem;
+  }
+
+  .post h3 {
+    font-size: 1rem;
+  }
+
+  .post time {
+    font-size: 0.75rem;
+  }
+
+  .post-tags span {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+  }
+}

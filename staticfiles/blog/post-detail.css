@@ -44,6 +44,133 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #summary {
+    margin: 6rem auto 2rem auto;
+    padding: 1.5rem;
+    height: auto;
+    min-height: 20rem;
+  }
+
+  #summary h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+  }
+
+  #summary article {
+    position: static;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  #summary article img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #read-later {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  #read-later button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+
+  main {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  #comment-form {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  #comments {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .tag {
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #summary {
+    margin: 4rem auto 1rem auto;
+    padding: 1rem;
+    min-height: 18rem;
+  }
+
+  #summary h2 {
+    font-size: 1.8rem;
+  }
+
+  #summary article img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  #read-later button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  main {
+    width: 98%;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  #comment-form {
+    width: 98%;
+    padding: 1rem;
+  }
+
+  #comments {
+    width: 98%;
+    padding: 1rem;
+  }
+
+  #comments h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-control input,
+  .form-control textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  #comment-form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .tag {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    margin: 0.1rem;
+  }
+}
+
 #summary address {
   font-weight: bold;
 }

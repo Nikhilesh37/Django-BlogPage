@@ -37,3 +37,37 @@
 #stored-posts a:active {
   background-color: #ccc;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #stored-posts {
+    margin: 6rem auto 2rem auto;
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  #stored-posts a {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #stored-posts {
+    margin: 4rem auto 1rem auto;
+    padding: 1rem;
+    width: 98%;
+  }
+
+  #stored-posts a {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  #stored-posts li {
+    margin: 0.8rem 0;
+  }
+}
